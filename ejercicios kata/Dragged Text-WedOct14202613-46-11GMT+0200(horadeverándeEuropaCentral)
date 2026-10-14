@@ -1,0 +1,13 @@
+6 kyu
+Permute a Palindrome
+Python:
+def permute_a_palindrome(palabra):
+    impares = 0
+    for char in set(palabra):
+        contador = palabra.count(char)
+        if contador % 2 != 0:
+            impares += 1
+    if impares <= 1:
+        return True
+    else:
+        return False

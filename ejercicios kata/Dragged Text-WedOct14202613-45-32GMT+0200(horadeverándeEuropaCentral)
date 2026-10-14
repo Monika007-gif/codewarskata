@@ -1,0 +1,11 @@
+def solve(s):
+    contador = 0
+    for i in range(len(s) // 2):
+        if s[i] != s[-i-1]:
+            contador += 1
+    if contador == 1:
+        return True
+    if contador == 0 and len(s) % 2 != 0:
+        return True
+    return False
+        
